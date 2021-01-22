@@ -7,7 +7,6 @@ import { setUserName } from '../store/actions.js'
 
 //Importing CSS and Ant Designs
 import { Form, Input, Button, Typography } from 'antd';
-import "../css/HomeScreen.css"
 export default function HomeScreen() {
     
     //Redux Statezz
