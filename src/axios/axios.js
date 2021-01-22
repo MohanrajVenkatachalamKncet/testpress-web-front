@@ -15,7 +15,7 @@ export const CreateUserScore = async (username,score) => {
     try {
 
         const respo = await axios.post(
-            `http://localhost:5000`,{username:name,score:sc},
+            `https://testpress-api-service.herokuapp.com/createUserScore`,{username:name,score:sc},
             {
                 withCredentials: true,
             }
@@ -34,7 +34,7 @@ export const ReadUserScore = async () => {
     // const {dispatch} = useDispatch();
     try {
         const respo = await axios.get(
-            `http://localhost:5000/getUserScore`,
+            `https://testpress-api-service.herokuapp.com/getUserScore`,
             {
                 withCredentials: true,
             }
